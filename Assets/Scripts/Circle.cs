@@ -6,7 +6,7 @@ using UnityEngine;
 public class Circle : Shape
 {
     private float raidus;
-    private float area;
+    private float areaS;
     private void Start()
     {
         Init("Circle");
@@ -14,15 +14,15 @@ public class Circle : Shape
         Resize();
         CalculateArea();
         Debug.Log($"Circle raduis : {raidus}");
-        Debug.Log($"Circle area : {area}");
+        Debug.Log($"Circle area : {areaS}");
     }
 
     public override float CalculateArea()
     {
         raidus = 2;
-        float math = Mathf.Pow( 2, raidus );
-        area = math;
-        return math;
+        float math = raidus * 2;
+        areaS = math;
+        return areaS;
 
     }
 

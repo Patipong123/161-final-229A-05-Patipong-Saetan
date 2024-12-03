@@ -20,9 +20,9 @@ public class Square : Shape
     public override float CalculateArea()
     {
         side = 2;
-        float math = Mathf.Sqrt(side * side);
+        float math = side * side;
         area = math;
-        return math;
+        return area;
         
 
     }
